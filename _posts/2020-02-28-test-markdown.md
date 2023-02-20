@@ -1,7 +1,6 @@
 ---
 title: "Binary Bomb Lab"
 classes: wide
-header:
 tags: [BinaryBomb Phases] 
 header:
     teaser: /assets/images/reverseEngineerinig/7.png
