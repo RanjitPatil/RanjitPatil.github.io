@@ -107,7 +107,7 @@ so it simply compares my input to the Harden-string (and it's just easy to know 
 
 let's try now with the new answer : ```I am just a renegade hockey mom.``` :
 
-![answer of phase_1](images/answer%20of%20phase_1.png)
+![answer of phase_1](assets/images/reverseEngineerinig/answer_of_phase_1.png)
 
 now, let's move to the second phase.
 
