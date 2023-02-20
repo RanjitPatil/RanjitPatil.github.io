@@ -68,7 +68,7 @@ to start the debugger and load the binary file with gdbCfg file:
 
 after it starts, it will print out what we wrote in the gdbCfg file, but first I want to disassemble the main function, by writing ```disas``` to disassemble the function we are standing at :
 
-[![Disas](assets/images/reverseEngineerinig/1.png)](assets/images/reverseEngineerinig/1.png)
+[![Disas](/assets/images/reverseEngineerinig/1.png)](/assets/images/reverseEngineerinig/1.png)
 
 ### Reading the Second Argument
 we see that it starts with comparison the value stored in ```rdi``` register if it equals to  1  or 2, if 1 it will just do call ```<initialize_bomb>``` function and continue, and if 2 it will read the second value pointed to by ```rsi```, we know that in system v call convention that the rdi stores the first argument ( which in our case is the ```argc``` argument) and the rsi stores the second argument (```argv```), so it seems that if I pass it an argument it will try to find that file and read it to it's input, but in our case now let's just ignore that.
