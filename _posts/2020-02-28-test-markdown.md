@@ -95,7 +95,7 @@ we see that it moves a value to ```rsi``` then it calls ```<strings_not_equal>``
 
 ```x/s $rdi``` will print to us ```omar```value, which is our input, and second argument can be examined by: ```x/s 0x555555557150``` as the debugger lists(this is the address calculated after ```$rip-0x1b9a```) or by just execute the instruction of the load and examine ```rsi``` it self, it doesn't matter. we see that it contain : ```I am just a renegade hockey mom.```. that's an interested string, let's now disassemble the ```strings_not_equal``` function without stepping-into it; by just type : ```disas strings_not_equal``` in gdb, it will print :
 
-![disassemble of strings_not_equal function](/assets/images/reverseEngineerinig/disassemble\ of\ strings_not_equal\ function.png)
+![disassemble of strings_not_equal function](assets/images/reverseEngineerinig/disassemble\ of\ strings_not_equal\ function.png)
 
 here we notice many things, first it call ```string_length``` twice, on with argument of our input and the other with Harden-string as an argument to get their size, then compare the size of them, if not equaled it will return 1, and if equal will go to next test.
 
