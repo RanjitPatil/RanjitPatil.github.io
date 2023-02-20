@@ -19,7 +19,6 @@ categories:
 # tags: [reverse]
 // comments: true
 -->
-# BINARY_BOMB_LAB
 ## Introduction
 this binary was in x86_64 assembly course from OpenSecurityTraining2. and consist of 6 phases every one needs a special password to be defused (passed) otherwise it will blown up (not passed).
 
