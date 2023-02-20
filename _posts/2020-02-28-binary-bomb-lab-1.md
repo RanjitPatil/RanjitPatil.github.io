@@ -1,5 +1,5 @@
 ---
-title: "Binary Bomb Lab"
+title: "Binary Bomb Lab - phase 1"
 classes: wide
 tags: [BinaryBomb Phases] 
 header:
