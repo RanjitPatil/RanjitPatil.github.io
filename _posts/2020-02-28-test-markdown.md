@@ -2,8 +2,8 @@
 title: "Binary Bomb Lab"
 classes: wide
 header:
-teaser: /assets/images/malware-analysis/ksl0t-keylogger/12.png
-ribbon: DodgerBlue
+tags: [BinaryBomb Phases] 
+teaser: /assets/images/reverseEngineerinig/7.png
 description: "this binary was in x86_64 assembly course from OpenSecurityTraining2. and consist of 6 phases every one needs a special password to be defused (passed) otherwise it will blown up (not passed)."
 Sample MD5:  59b57bdabee2ce1fb566de51dd92ec94
 categories:
@@ -109,6 +109,5 @@ let's try now with the new answer : ```I am just a renegade hockey mom.``` :
 
 [![answer of phase_1](/assets/images/reverseEngineerinig/6.png)](/assets/images/reverseEngineerinig/6.png)
 
-now, let's move to the second phase.
+now, let's move on to the second phase.
 
-#### phase 2
