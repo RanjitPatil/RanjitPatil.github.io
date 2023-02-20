@@ -1,12 +1,24 @@
 ---
-layout: post
-title: Binary Bomb lab
-subtitle: reverse engineering OST2
-gh-repo: daattali/beautiful-jekyll
-gh-badge: [star, fork, follow]
-tags: [reverse]
-comments: true
+title: "Binary Bomb Lab"
+classes: wide
+header:
+teaser: /assets/images/malware-analysis/ksl0t-keylogger/12.png
+ribbon: DodgerBlue
+description: "this binary was in x86_64 assembly course from OpenSecurityTraining2. and consist of 6 phases every one needs a special password to be defused (passed) otherwise it will blown up (not passed)."
+Sample MD5:  59b57bdabee2ce1fb566de51dd92ec94
+categories:
+  - Reverse Engineering
 ---
+<!-- 
+# Sample MD5: 59b57bdabee2ce1fb566de51dd92ec94
+# layout: post
+# title: Binary Bomb lab
+# subtitle: reverse engineering OST2
+# gh-repo: daattali/beautiful-jekyll
+# gh-badge: [star, fork, follow]
+# tags: [reverse]
+// comments: true
+-->
 # BINARY_BOMB_LAB
 ## Introduction
 this binary was in x86_64 assembly course from OpenSecurityTraining2. and consist of 6 phases every one needs a special password to be defused (passed) otherwise it will blown up (not passed).
