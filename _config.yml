@@ -16,7 +16,7 @@ minimal_mistakes_skin    : "dark" # "air", "aqua", "contrast", "dark", "dirt", "
 
 # Site Settings
 locale                   : "en-US"
-title                    : "N1ght-W0lf"
+title                    : "Omar Shehata"
 title_separator          : "-"
 subtitle                 : # site tagline that appears below site title in masthead
 name                     : "Omar Shehata"
@@ -95,8 +95,8 @@ analytics:
 author:
   name             : "Omar Shehata"
   avatar           : /assets/images/site_data/avatar.jpg # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
-  bio              : "Malware Analysis and Reverse Engineering"
-  location         : "Area 51"
+  bio              : "Someone obsessed With low-level things"
+  location         : "Egypt"
   email            :
   links:
     - label: "Email"
