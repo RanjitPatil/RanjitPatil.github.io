@@ -8,6 +8,7 @@ description: "this binary was in x86_64 assembly course from OpenSecurityTrainin
 Sample MD5:  59b57bdabee2ce1fb566de51dd92ec94
 categories:
   - CTF Writeups
+toc: true
 ---
 <!-- 
 # Sample MD5: 59b57bdabee2ce1fb566de51dd92ec94
