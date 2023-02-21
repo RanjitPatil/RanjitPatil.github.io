@@ -29,7 +29,7 @@ it will ask for input for second phase. let's again just write ```omar``` for te
 
 [![2](/assets/images/reverseEngineerinig/phase2/2.png)](/assets/images/reverseEngineerinig/phase2/2.png)
 
-first it initialize the stack and allocate 24 bytes in the stack  (ignore the moving value from the FS segment, it's just a way for checking of the stack. you can ***((link)) read*** this for more Information). then it calls ```read_six_numbers``` function with 2 parameters (our input (```rdi```) and value of the stack (```rsi```)). i can't see any definition for the variables allocated in the stack, so it seems that this function will allocate that variables. let's dive into this function and see what it do.
+first it initialize the stack and allocate 24 bytes in the stack  (ignore the moving value from the FS segment, it's just a way for checking of the stack. you can [read](https://stackoverflow.com/questions/10325713/why-does-this-memory-address-fs0x28-fs0x28-have-a-random-value) this for more Information). then it calls ```read_six_numbers``` function with 2 parameters (our input (```rdi```) and value of the stack (```rsi```)). i can't see any definition for the variables allocated in the stack, so it seems that this function will allocate that variables. let's dive into this function and see what it do.
 
 [![3](/assets/images/reverseEngineerinig/phase2/3.png)](/assets/images/reverseEngineerinig/phase2/3.png)
 
