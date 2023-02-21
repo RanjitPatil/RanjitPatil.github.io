@@ -9,6 +9,7 @@ Sample MD5:  59b57bdabee2ce1fb566de51dd92ec94
 categories:
   - CTF Writeups
 toc: true
+ribbon: DodgerRed
 ---
 <!-- 
 # Sample MD5: 59b57bdabee2ce1fb566de51dd92ec94
