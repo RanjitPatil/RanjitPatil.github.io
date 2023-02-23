@@ -4,7 +4,7 @@ classes: wide
 tags: [UNPACKING]
 header:
     teaser: /assets/images/myIcon/remcosIcon
-description: "Remcos or Remote Control and Surveillance*, marketed as a legitimate software by a Germany-based firm Breaking Security for remotely managing Windows systems is now widely used in multiple malicious campaigns by threat actors. Remcos is a sophisticated remote access Trojan (RAT) that can be used to fully control and monitor any Windows computer from XP and onwards."
+description: "Remcos or Remote Control and Surveillance, marketed as a legitimate software by a Germany-based firm Breaking Security for remotely managing Windows systems is now widely used in multiple malicious campaigns by threat actors. Remcos is a sophisticated remote access Trojan (RAT) that can be used to fully control and monitor any Windows computer from XP and onwards."
 categories:
   - Malware Analysis
 toc: true
