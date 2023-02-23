@@ -4,8 +4,8 @@ main:
     url: /categories/#malware-analysis
       # - title: "Binary Exploitation"
     #  url: /categories/#binary-exploitation
-  - title: "CTF Writeups"
-    url: /categories/#ctf-writeups
+  - title: "Reverse Engineering"
+    url: /categories/#reverse-engineering
       #- title: "Tutorials"
       # url: /categories/#tutorials
   - title: "All Categories"
