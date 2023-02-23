@@ -63,21 +63,21 @@ the first hit will be at *IsDebuggerPresent*, to bypass it just continue until i
 
 [![5](/assets/images/malware-analysis/remcosUnpack/5.png)](/assets/images/malware-analysis/remcosUnpack/5.png)
 
-then continue, it will call same api many times but no you bypass it automaticly. so it will continue until it hits at the call of *CreateProcessInternalW*. here we can see from the stack the parameters it passes to it, the only one that is important is the 2nd and 7th. the second is the application name, and the seventh is the creationFlags, so it runs the same exe with create flag of 0x4 ( which is the suspend state). so again let's continue running..
+then continue, it will call same api many times but now you bypass it automaticly. so it will continue until it hits at the call of *CreateProcessInternalW*. here we can see from the stack the parameters it passes to it, the only one that is important is the 2nd and 7th. the second is the application name, and the seventh is the creationFlags, so it runs the same exe with create flag of 0x4 ( which is the suspend state). so again let's continue running..
 
 [![6](/assets/images/malware-analysis/remcosUnpack/6.png)](/assets/images/malware-analysis/remcosUnpack/6.png)
 
-now we hits the *WriteProcessMemory*. the first parameter is the handle of the file it will write into, and if you searched for that handle (0x2FC) it's handle to our process. the second parameter is where it will write into, and the third one is buffer of the data that will be written. so if you followed up that address of the buffer in the dump you will notice that it's really a start of a PE file, but something else is that there isn't enough data to be written to be executed. it's just writting 0x1000 bytes. 
+now we hits the *WriteProcessMemory*. the first parameter is the handle of the file it will write into, and if you searched for that handle (0x2FC) it's handle to the newly created process. the second parameter is where it will write into, and the third one is buffer of the data that will be written. so if you followed up that address of the buffer in the dump you will notice that it's really a start of a PE file, but something else is that there isn't enough data to be written to be executed. it's just writting 0x1000 bytes. 
 
 [![7](/assets/images/malware-analysis/remcosUnpack/7.png)](/assets/images/malware-analysis/remcosUnpack/7.png)
 
-but if you continued the execution you will notice that this api is called again with the handle but start address is different and also the buffer, the start address here is actually the start address from the previous write + the size of the buffer that was written (0x400000 + 0x1000) , so it now writing another data after it. now it make more sense.
+but if you continued the execution you will notice that this api is called again with the same handle but the start address is different and also the buffer, the start address here is actually the start address from the previous write + the size of the buffer that was written (0x400000 + 0x1000) , so it now writing another data after it. now it make more sense.
 
 [![8](/assets/images/malware-analysis/remcosUnpack/8.png)](/assets/images/malware-analysis/remcosUnpack/8.png)
 
 so it's just divided the data that will be written into some buffers and it write them separately after each other in the new process.
 
-so let's continue to execute until it finish them, then after them you will find that it calls *NtResumeThread* with handle to thread. if you searched to that handle again you will also see that it's handle to a thread that resides in the newly create process.
+so let's continue to execute until it finish them ( it will write many times), then after them you will find that it calls *NtResumeThread* with handle to thread. if you searched to that handle again you will also see that it's handle to a thread that resides in the newly create process.
 
 [![9](/assets/images/malware-analysis/remcosUnpack/9.png)](/assets/images/malware-analysis/remcosUnpack/9.png)
 [![10](/assets/images/malware-analysis/remcosUnpack/10.png)](/assets/images/malware-analysis/remcosUnpack/10.png)
