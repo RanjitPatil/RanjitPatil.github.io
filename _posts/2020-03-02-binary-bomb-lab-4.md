@@ -32,7 +32,7 @@ now let's disassemble the ```func4``` to see what input should it take to return
 
 ​	So here's the disassemble of it. at first you see some mathematics operations then comparison, and there's at the end a call to the same function. so it do some recursion. let's analyze it block by block
 
-```bash
+```assembly
    0x0000555555555715 <+0>:     endbr64
    0x0000555555555719 <+4>:     push   %rbx
    0x000055555555571a <+5>:     mov    %edx,%eax
@@ -50,7 +50,7 @@ now let's disassemble the ```func4``` to see what input should it take to return
 
 ​	The operation first starts with the subtraction of the second and third parameter as said before. then get that value resulted and try to divide it by half, by first check if it's a negative or positive value by shifting it right by 31 ( to make only value resides in the register is the last bit which is the sign bit) then add that bit to the original value; so if the original value was positive it will add nothing to it and the divide will continue normally, but if the value was negative it will add one to that original value, this operation can be implement in other ways like:
 
-```python
+```assembly
 
 mov   ax,-1   
     and   ax,ax   
@@ -112,9 +112,9 @@ else
 
 This is actually the **binary search** algorithm. that ```finalValue``` is actually the mid point between the start and the end of the range (which are the second and third arguments) and check if that inputted value equals to that mid point or not, and according to the result it will return. so if it's not it will return the returned value from the another call to the same function + the ```finalValue```; so this function actually get the index of the entered value between range 0 - 14 and returns the sum of mid points it hits in every call to it.
 
-    so we want make this function returns 10. the first call to that function will always return 7 ( because it's the first mid point between 0 - 14) so we need to make the second call to the function returns 3 (to make it all returns 3 + 7 = 10).
+so we want make this function returns 10. the first call to that function will always return 7 ( because it's the first mid point between 0 - 14) so we need to make the second call to the function returns 3 (to make it all returns 3 + 7 = 10).
 
-    and if you noticed that the mid point between 0 - 7 is 3. so here we need to enter 3 to it; to make the first call return 7 + another call which will use the lower range between (0-7) and then get the mid point between them which would be 3 and it my input equals to that mid point it will just return it.
+and if you noticed that the mid point between 0 - 7 is 3. so here we need to enter 3 to it; to make the first call return 7 + another call which will use the lower range between (0-7) and then get the mid point between them which would be 3 and it my input equals to that mid point it will just return it.
 
 so let's try my final answer to that phase (```3 10```):
 
