@@ -13,7 +13,7 @@ ribbon: red
 ---
 # Introduction
 
-this is the phase number 2. in the last writeup I have solver the first phase of the binary bomb lab, So now let's move to the second phase.
+this is the phase number 2. in the last writeup I have solved the first phase of the binary bomb lab, So now let's move to the second phase.
 
 # Tools
 
