@@ -50,9 +50,9 @@ now let's disassemble the ```func4``` to see what input should it take to return
 
 ​	The operation first starts with the subtraction of the second and third parameter as said before. then get that value resulted and try to divide it by half, by first check if it's a negative or positive value by shifting it right by 31 ( to make only value resides in the register is the last bit which is the sign bit) then add that bit to the original value; so if the original value was positive it will add nothing to it and the divide will continue normally, but if the value was negative it will add one to that original value, this operation can be implement in other ways like:
 
-```bash
+```python
 
-	mov   ax,-1   
+mov   ax,-1   
     and   ax,ax   
     jns   SomePlace ; jump if it positive   
     add   ax,2-1  ; and to it n-1 because it's negative
@@ -80,7 +80,7 @@ newValue = (arg3 + arg2 + (arg2 > arg3)) / 2
 
 Done with this block, let's take another one :
 
- ```bash
+ ```python
     0x0000555555555729 <+20>:    cmp    %edi,%ebx
     0x000055555555572b <+22>:    jg     0x555555555733 <func4+30>
     0x000055555555572d <+24>:    jl     0x55555555573f <func4+42>
@@ -96,10 +96,8 @@ Done with this block, let's take another one :
     0x0000555555555747 <+50>:    add    %eax,%ebx
     0x0000555555555749 <+52>:    jmp    0x55555555572f <func4+26>
  ```
+It starts with comparison to our final result and the first argument (which is my  first input) and if they are the same they will return that value and if not it will go to another call to the same function but with different arguments. so if my input is bigger than the final result it will call the function with arguments : ```(myInput, finalValue + 1, 14)``` and if my input is less than the final value it will call it with arguments : ```(myInput, 0, finalValue +1)```. you may notice that the first argument is always the same, but the second and the third are changing according to who is bigger. and finally it returns that returned function + my final value. so if you want to write this function in high-level code it would be like :
 
-
-
-    It starts with comparison to our final result and the first argument (which is my  first input) and if they are the same they will return that value and if not it will go to another call to the same function but with different arguments. so if my input is bigger than the final result it will call the function with arguments : ```(myInput, finalValue + 1, 14)``` and if my input is less than the final value it will call it with arguments : ```(myInput, 0, finalValue +1)```. you may notice that the first argument is always the same, but the second and the third are changing according to who is bigger. and finally it returns that returned function + my final value. so if you want to write this function in high-level code it would be like :
 
 ```c
 finalValue = (arg3 + arg2 + (arg2 > arg3)) / 2;
@@ -111,7 +109,8 @@ else
     return finalValue;
 ```
 
-    This is actually the **binary search** algorithm. that ```finalValue``` is actually the mid point between the start and the end of the range (which are the second and third arguments) and check if that inputted value equals to that mid point or not, and according to the result it will return. so if it's not it will return the returned value from the another call to the same function + the ```finalValue```; so this function actually get the index of the entered value between range 0 - 14 and returns the sum of mid points it hits in every call to it.
+
+This is actually the **binary search** algorithm. that ```finalValue``` is actually the mid point between the start and the end of the range (which are the second and third arguments) and check if that inputted value equals to that mid point or not, and according to the result it will return. so if it's not it will return the returned value from the another call to the same function + the ```finalValue```; so this function actually get the index of the entered value between range 0 - 14 and returns the sum of mid points it hits in every call to it.
 
     so we want make this function returns 10. the first call to that function will always return 7 ( because it's the first mid point between 0 - 14) so we need to make the second call to the function returns 3 (to make it all returns 3 + 7 = 10).
 
