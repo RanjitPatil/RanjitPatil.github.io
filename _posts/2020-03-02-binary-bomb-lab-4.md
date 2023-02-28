@@ -42,7 +42,6 @@ now let's disassemble the ```func4``` to see what input should it take to return
    0x0000555555555723 <+14>:    add    %eax,%ebx
    0x0000555555555725 <+16>:    sar    %ebx
    0x0000555555555727 <+18>:    add    %esi,%ebx
-
 ```
 
 ​	First, this block of code use some trick to do an operation. it first subtract the second and the third parameter then the resulted value will shift it right by 31 bit (0x1f). then it will add the resulted value after shifting and before, and at last it shift arithmetic it right by one byte. 
@@ -51,13 +50,15 @@ now let's disassemble the ```func4``` to see what input should it take to return
 
 ​	The operation first starts with the subtraction of the second and third parameter as said before. then get that value resulted and try to divide it by half, by first check if it's a negative or positive value by shifting it right by 31 ( to make only value resides in the register is the last bit which is the sign bit) then add that bit to the original value; so if the original value was positive it will add nothing to it and the divide will continue normally, but if the value was negative it will add one to that original value, this operation can be implement in other ways like:
 
-```assembly
+``` assembly
+
 	mov   ax,-1   
     and   ax,ax   
     jns   SomePlace ; jump if it positive   
     add   ax,2-1  ; and to it n-1 because it's negative
 SomePlace:
 	sar ax, 1 ; now do the divide 
+
 ```
 
 ​	All would work will. then after check if it was negative or not ( the adding one to it will solve the problem of dividing a negative value 2. or division by any integer *n*, see [this](http://www.jagregory.com/abrash-zen-of-asm/#signed-division-with-sar) for farther read ). then it adds the second argument again to the final result ( at offset ```<+18>```).
