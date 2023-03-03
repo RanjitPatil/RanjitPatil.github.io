@@ -24,6 +24,7 @@ so let's disassemble it at first:
 
 same scenario, by examining ```0x55555555730f```, it stors : ```"%d %d"```. now let's analyze block by block.
 
+
 ```
    0x00005555555557f5 <+49>:    mov    (%rsp),%eax
    0x00005555555557f8 <+52>:    and    $0xf,%eax
@@ -32,7 +33,7 @@ same scenario, by examining ```0x55555555730f```, it stors : ```"%d %d"```. now 
    0x0000555555555801 <+61>:    je     0x555555555835 <phase_5+113>
    0x0000555555555803 <+63>:    mov    $0x0,%ecx
    0x0000555555555808 <+68>:    mov    $0x0,%edx
-   0x000055555555580d <+73>:    lea    0x19ac(%rip),%rsi        # 0x5555555571c0 																	<array.3471>
+   0x000055555555580d <+73>:    lea    0x19ac(%rip),%rsi        # 0x5555555571c0 <array.3471>
    0x0000555555555814 <+80>:    add    $0x1,%edx
    0x0000555555555817 <+83>:    cltq
    0x0000555555555819 <+85>:    mov    (%rsi,%rax,4),%eax
