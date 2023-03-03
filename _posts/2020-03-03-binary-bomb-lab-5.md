@@ -24,7 +24,7 @@ so let's disassemble it at first:
 
 same scenario, by examining ```0x55555555730f```, it stors : ```"%d %d"```. now let's analyze block by block.
 
-```assembly
+```
    0x00005555555557f5 <+49>:    mov    (%rsp),%eax
    0x00005555555557f8 <+52>:    and    $0xf,%eax
    0x00005555555557fb <+55>:    mov    %eax,(%rsp)
