@@ -46,7 +46,7 @@ so as you can see it's a big bunch of code. let's test block by block.
 
 ```
 
-same what was used before in [phase 2](). So according to our previous analysis it just needs six integer numbers. this block just check for it. let's move on to the next block:
+same what was used before in [phase 2](https://omarshehata11.github.io/reverse%20engineering/binary-bomb-lab-2/). So according to our previous analysis it just needs six integer numbers. this block just check for it. let's move on to the next block:
 
 ```
    0x0000555555555898 <+61>:    add    $0x1,%rbx
