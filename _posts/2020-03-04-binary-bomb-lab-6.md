@@ -193,7 +193,8 @@ let's try out :
 
 [![5](/assets/images/reverseEngineerinig/phase6/5.png)](/assets/images/reverseEngineerinig/phase6/5.png)
 
-**AND FINALLY **
+**AND FINALLY**
+
 *we are done with all phase. I hope you enjoyed the journey with me. if you saw any mistake I made or anything I said that wasn't clear; please Mail me :)*
 
 ***SEE YA IN NEXT CHALLENGES*** 
