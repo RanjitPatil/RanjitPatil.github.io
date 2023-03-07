@@ -22,7 +22,9 @@ the disassembly :
 
 [![1](/assets/images/reverseEngineerinig/phase6/1.png)](/assets/images/reverseEngineerinig/phase6/1.png)
 [![2](/assets/images/reverseEngineerinig/phase6/2.png)](/assets/images/reverseEngineerinig/phase6/2.png)
+
 so as you can see it's a big bunch of code. let's test block by block.
+
 
 ```
    0x000055555555585b <+0>:     endbr64
