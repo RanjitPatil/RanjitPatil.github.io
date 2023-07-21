@@ -16,16 +16,16 @@ minimal_mistakes_skin    : "dark" # "air", "aqua", "contrast", "dark", "dirt", "
 
 # Site Settings
 locale                   : "en-US"
-title                    : "G0ldenR@bbit"
+title                    : "Malware Insights"
 title_separator          : "-"
 subtitle                 : # site tagline that appears below site title in masthead
-name                     : "Omar Shehata"
-description              : "Someone obsessed With low-level things"
+name                     : "Ranjit Patil"
+description              : "Malware Analysis & Reverse Engineering"
 url                      : # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
 baseurl                  : # the subpath of your site, e.g. "/blog"
 repository               : # GitHub username/repo-name e.g. "mmistakes/minimal-mistakes"
 teaser                   : # path of fallback teaser image, e.g. "/assets/images/500x300.png"
-logo                     :  /assets/images/myIcon/myIcons 
+logo                     :  assets/images/profile3.png 
   # path of logo image to display in the masthead, e.g. "/assets/images/88x88.png"
 masthead_title           : # overrides the website title displayed in the masthead, use " " for no title
 # breadcrumbs            : false # true, false (default)
@@ -94,33 +94,27 @@ analytics:
 
 # Site Author
 author:
-  name             : "Omar Shehata"
-  avatar           : /assets/avatars/myAvatar.jpg # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
-  bio              : "Someone obsessed With low-level things"
-  location         : "Egypt"
+  name             : "Ranjit Patil"
+  avatar           : assets/images/profilepic1.png # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
+  bio              : "Malware Analysis & Reverse Engineering"
   email            :
   links:
     - label: "Email"
       icon: "fas fa-fw fa-envelope-square"
-      url: "mailto:omarshehata9402@gmail.com"
+      url: "patilranjit9527@gmail.com"
     - label: "Website"
       icon: "fas fa-fw fa-link"
       # url: "https://your-website.com"
     - label: "Twitter"
       icon: "fab fa-fw fa-twitter-square"
-      #url: "https://twitter.com/_n1ghtw0lf"
-    - label: "Facebook"
-      icon: "fab fa-fw fa-facebook-square"
-      # url: "https://facebook.com/"
+      url: "https://twitter.com/patilranjit00"
     - label: "LinkedIn"
       icon: "fab fa-fw fa-linkedin"
-      url: "https://www.linkedin.com/in/g0ldenrabbit/"
+      url: "https://www.linkedin.com/in/ranjitpatil00/"
     - label: "GitHub"
       icon: "fab fa-fw fa-github"
-      url: "https://github.com/OmarShehata11"
-    - label: "Instagram"
-      icon: "fab fa-fw fa-instagram"
-      # url: "https://instagram.com/"
+      url: "https://github.com/RanjitPatil"
+
 
 # Site Footer
 footer:
@@ -133,7 +127,7 @@ footer:
       # url:
     - label: "GitHub"
       icon: "fab fa-fw fa-github"
-      url:  "https://github.com/OmarShehata11"
+      #url:  
     - label: "GitLab"
       icon: "fab fa-fw fa-gitlab"
       # url:
