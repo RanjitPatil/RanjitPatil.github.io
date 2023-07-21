@@ -1,5 +1,5 @@
 ---
-title: "Malicious PDF Analysis"
+title: "Malicious PDF Document Analysis"
 classes: wide
 tags: [PDF Malware]
 header:
