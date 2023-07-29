@@ -363,5 +363,5 @@ in file: baddoc.doc - OLE stream: 'Macros/VBA/UserForm1'
 
 ## References :
 
-- https://www.hybrid-analysis.com/sample/8b92c23b29422131acc150fa1ebac67e1b0b0f8cfc1b727805b842a88de447de/5e99e70d81a0de676760bdfb
-- https://github.com/tehsyntx/loffice
+- [https://www.hybrid-analysis.com/sample/8b92c23b29422131acc150fa1ebac67e1b0b0f8cfc1b727805b842a88de447de/5e99e70d81a0de676760bdfb](https://www.hybrid-analysis.com/sample/8b92c23b29422131acc150fa1ebac67e1b0b0f8cfc1b727805b842a88de447de/5e99e70d81a0de676760bdfb)
+- [https://github.com/tehsyntx/loffice](https://github.com/tehsyntx/loffice)
