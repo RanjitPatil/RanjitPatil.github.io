@@ -3,8 +3,8 @@ title: "BiBi Windows Wiper Analysis"
 classes: wide
 tags: [Wiper Malware]
 header:
-    teaser: /assets/images/pdf.png
-description: "Unravel the secrets of malicious PDFs and fortify your defenses against stealthy cyber threats. Welcome to our Malicious PDF Analysis blog!"
+    teaser: /assets/images/bibi.png
+description: "On 30th October, Security Joes posted its findings about a Wiper malware for Linux systems used in the war in Gaza. It was called the "BiBi-Linux Wiper". And then on November 1 2023, BlackBerry Research and Intelligence Team found its Windows variant."
 
 categories:
   - Malware Analysis
