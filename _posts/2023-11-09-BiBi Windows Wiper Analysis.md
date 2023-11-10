@@ -102,7 +102,7 @@ In this post, we will look at the Windows version of the BiBi Wiper known as the
 
  -  To optimize the process, the wiper creates multiple threads based on the specified number, executing the main wiping function within a loop. Notably, the BiBi-Windows Wiper is designed to exclude files with ".exe," ".dll," and ".sys" extensions from its destructive actions.
 
-    ![image](https://github.com/RanjitPatil/BiBi-Wiper/assets/43460691/fa9c594d-d9d0-4329-a369-7b7877436fd0)
+     ![image](https://github.com/RanjitPatil/BiBi-Wiper/assets/43460691/6bfef546-6644-4408-9bda-cadf3fb8ad15)
 
 -  The Wiper function implements the Mersenne Twister PseudoRandom Number Generator Algorithm which generates random numbers. Then Wiper changes the name of the destroyed files using the Mersenne Twister function again. The generated random number undergoes a modulus operation with a hardcoded value, creating an index in a wide string. This index is then used to form a unique filename, appended with ".BiBi" and the round number.
 
