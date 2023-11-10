@@ -1,10 +1,10 @@
 ---
 title: "BiBi Windows Wiper Analysis"
 classes: wide
-tags: [Wiper Malware]
+tags: [BiBi Windows Wiper]
 header:
     teaser: /assets/images/bibi.png
-description: "On 30th October, Security Joes posted its findings about a Wiper malware for Linux systems used in the war in Gaza. It was called the "BiBi-Linux Wiper". And then on November 1 2023, BlackBerry Research and Intelligence Team found its Windows variant."
+description: "The Security Joes Incident Response team found the malware during a forensics investigation of a breach within an Israeli company."
 
 categories:
   - Malware Analysis
@@ -38,7 +38,7 @@ In this post, we will look at the Windows version of the BiBi Wiper known as the
   [+] Round %d
   lla/ teIuq/ swodahs   eteled nimdassv  c/ exe.dmc
   eteled ypocwodahs cimw c/ exe.dmc
-  seruliafllaerongi ycilopsutatstoob tluafed{ tes / tidedcb c / exe.dmc
+  seruliafllaerongi ycilopsutatstoob }tluafed{ tes / tidedcb c / exe.dmc
   on delbaneyrevocer }tluafed{ tes/ tidedcb c/ exe.dmc
   C:\Users
   [+] Path: %s
