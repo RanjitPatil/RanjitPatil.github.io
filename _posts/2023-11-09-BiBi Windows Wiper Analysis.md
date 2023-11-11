@@ -197,3 +197,5 @@ condition:
 ## References :
 
 - [https://www.linkedin.com/pulse/bibi-wiper-gaza-war-now-goes-windows-dmitry-bestuzhev-yftze/#](https://www.linkedin.com/pulse/bibi-wiper-gaza-war-now-goes-windows-dmitry-bestuzhev-yftze/#)
+
+- [https://www.securityjoes.com/post/mission-data-destruction-a-large-scale-data-wiping-campaign-targeting-israel](https://www.securityjoes.com/post/mission-data-destruction-a-large-scale-data-wiping-campaign-targeting-israel)
